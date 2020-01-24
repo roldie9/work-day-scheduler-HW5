@@ -21,7 +21,7 @@ body {
     border-bottom: 10px solid black;
   }
 
-  #date {
+  #currentDay {
     color: black;
     text-align: center;
     background-color: transparent;
@@ -38,7 +38,7 @@ body {
     border-color: black;
   }
   
-  .row {
+  .input {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
