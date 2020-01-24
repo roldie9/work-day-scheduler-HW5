@@ -21,7 +21,7 @@ body {
     border-bottom: 10px solid black;
   }
 
-  #currentDay {
+  .currentDay {
     color: black;
     text-align: center;
     background-color: transparent;

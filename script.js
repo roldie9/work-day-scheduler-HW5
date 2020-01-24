@@ -2,22 +2,23 @@ $(document).ready(function() {
     //Function for placing date on HTML
     function addDate() {
     var currentDay = moment().format('LLLL');
-        $("#currentDay").text(currentDay)
+        $("currentDay").text(currentDay)
     }
     addDate()
 
+    // For Loop that color codes each timeslot by past, present or future.
     var timeArr = $('input');
     for (i = 0; i , timeArr.length; i++) {
-        let hour = $(timeArr[i].attr('id');
+        let hour = $(timeArr[i].attr('id'));
         let difference = moment('LLLL').diff(moment(date, 'LLLL'), 'hours');
         if (difference < 0) {
-            $(timeArr[i].css('.past');
+            $(timeArr[i].css('past'));
         }
         else if (difference === 0) {
-            $(timeArr[i]).css('.present');
+            $(timeArr[i]).css('present');
         }
         else {
-            $(timeArr[i]).css('.future');
+            $(timeArr[i]).css('future');
         }
     }
 
@@ -27,7 +28,7 @@ $(document).ready(function() {
         let sched = $(this).attr("data-id")
         let note = $('#hour - $(sched)').val()
         localStorage.setItem(sched, JSON.stringify(note));
-    }
+    });
 
 
     // Get Items from Local Storage
