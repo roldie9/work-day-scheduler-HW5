@@ -20,6 +20,13 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
+
+  #date {
+    color: black;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+  }
   
   .description{
     white-space: pre-wrap;
